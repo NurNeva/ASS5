@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+
+.container{
+ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 100%;
+    grid-gap: 20px;
+   
+ 
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'Single Day', cursive;
+    border-radius: 50px;
+}
+    
+.content h3 {
+    margin-top: 10px;
+}
+
+.content p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.content img {
+    max-width: 100%; 
+    height: auto; 
+    flex-grow: 1;
+    border-radius: 50px;
+    transition: transform 0.5s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.content1{
+    grid-area: 1/ span 1;
+    margin-left: 10%;
+    
+}
+.content10{
+
+    grid-area: 2/span 2;
+}
+
+.content8{
+    grid-area: 2/ span 3;
+  
+    border-radius: 50px;
+}
+
+.content7{
+
+    grid-area: 5/span 2;
+   
+}
+
+.content9{
+    grid-area: 5/ span 4;
+}
+
+.content5{
+    grid-area: 2/ span 4;
+}
+
+.content6{
+    grid-area: 1/ span 3;
+    margin-left: 5%;
+}
+
+.content4{
+    grid-area: 3/ span 3 ;
+    margin-left: 40px;
+}
+
+.content3{
+    grid-area: 1/2;
+    margin-left: 10%;
+}
+
+.content2{
+    grid-area: 3/4;
+    margin-left:50%;
+}
+
+.content img:hover {
+    transform: scale(0.9); 
+    cursor: pointer;
+    border-radius: 0%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    filter: grayscale(100%);
+}
